@@ -5,7 +5,11 @@ import { Stack } from '@mui/material'
 import Logo from '../assets/images/Logo.png'
 const Navbar = () => {
   return ( 
-    <Stack>
+    <Stack 
+        direction="row"
+        justifyContent= "space-around"
+        sx = {{gap:{sm:'122px',xs:'40px',mp:{sm:'32px',xs:'20px'}},justifyContent: 'none'}} px='20px'
+    >
         <Link to="/">
             <img src={Logo} alt="logo" style={
                 {
@@ -15,11 +19,17 @@ const Navbar = () => {
                 }
             }/>
         </Link>
-        <Stack>
+        <Stack 
+            direction="row"
+            gap = "40px"
+            fontSize="24px"
+            alignItems="flex-end"
+        >
             <Link to="/" style={
                 {
                     textDecoration: 'none',
-                     
+                    color: '#3A1212',
+                    borderBottom : '3px solid #FF2625'
                 }
             }>
                 Home
