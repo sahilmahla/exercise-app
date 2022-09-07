@@ -108,7 +108,7 @@ body {
   
   .react-horizontal-scrolling-menu--wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
   }
 
   @media screen and (max-width:1200px) {
